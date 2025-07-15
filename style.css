@@ -29,40 +29,69 @@ body {
     background-color: var(--White);
     min-height: 100vh;
     font-family: var(--Main-font);
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-
-.card {
-    width: clamp(320px, 90%, 400px);
-    height: auto;
-    background-color: var(--Purple-500);
-    border-radius: 0.625rem;
+    display: block;
+    margin: 0 auto;
+    /* justify-content: center;
+    align-items: center;  */
 }
 
 
 .card-1 {
-    margin: 3.125rem;
+    width: clamp(320px, 90%, 400px);
+    height: auto;
+    background-color: var(--Purple-500);
+    border-radius: 0.625rem;
+    padding: 3.125rem;
+    
 }
 
 
 img {
-    border-radius: 60%;
+    width: 3rem;
+    border-radius: 50%;
     border: 0.125rem solid var(--Grey-200);
 }
 
-
-
+ 
 figure {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     color: var(--Grey-100);
 }
 
 
-figcaption {
-    ;
+figcaption div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+
+.name {
+    font-weight: 500;
+}
+
+
+h3 {
+    color: var(--White);
+    margin-top: 1.4375rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+.review {
+    margin-top: 20px;
+    color: var(--Grey-100);
+}
+
+
+.card-2 {
+    width: clamp(320px, 90%, 400px);
+    height: auto;
+    background-color: var(--Purple-500);
+    border-radius: 0.625rem;
+    padding: 3.125rem;
+    
 }
