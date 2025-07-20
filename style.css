@@ -26,23 +26,28 @@
 
 
 body {
-    background-color: var(--White);
+    background-color: var(--Grey-200);
     min-height: 100vh;
     font-family: var(--Main-font);
-    display: block;
-    margin: 0 auto;
-    /* justify-content: center;
-    align-items: center;  */
 }
 
 
-.card-1 {
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.card-1,
+.card-2,
+.card-3 {
     width: clamp(320px, 90%, 400px);
     height: auto;
-    background-color: var(--Purple-500);
     border-radius: 0.625rem;
     padding: 3.125rem;
-    
+    margin: 3.125rem 3.125rem;
 }
 
 
@@ -87,11 +92,31 @@ h3 {
 }
 
 
-.card-2 {
-    width: clamp(320px, 90%, 400px);
-    height: auto;
+.card-1 {
     background-color: var(--Purple-500);
-    border-radius: 0.625rem;
-    padding: 3.125rem;
+}
+
+
+.card-2 {
+    background-color: var(--Grey-500);
+}
+
+
+.card-3,
+.card-3 div,
+.card-3 h3 {
+    background-color: var(--White);
+    color: var(--Black);
+    color: var(--Grey-500);
     
+}
+
+/* 
+.card-3 h3 {
+    color: var(--Grey-500);
+} */
+
+
+.card-3 .review {
+    color: var(--Black);
 }
