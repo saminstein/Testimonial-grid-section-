@@ -42,7 +42,9 @@ body {
 
 .card-1,
 .card-2,
-.card-3 {
+.card-3,
+.card-4,
+.card-5 {
     width: clamp(320px, 90%, 400px);
     height: auto;
     border-radius: 0.625rem;
@@ -87,7 +89,7 @@ h3 {
 
 
 .review {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     color: var(--Grey-100);
 }
 
@@ -99,24 +101,50 @@ h3 {
 
 .card-2 {
     background-color: var(--Grey-500);
+    margin-top: 0;
 }
 
 
 .card-3,
-.card-3 div,
-.card-3 h3 {
+.card-5 {
     background-color: var(--White);
-    color: var(--Black);
-    color: var(--Grey-500);
-    
+    margin-top: 0;
 }
 
-/* 
-.card-3 h3 {
-    color: var(--Grey-500);
-} */
 
-
-.card-3 .review {
+.card-3 div,
+.card-5 div {
     color: var(--Black);
+}
+
+
+.card-3 h3,
+.card-5 h3 {
+    color: var(--Grey-500);
+}
+
+
+.card-3 .review, 
+.card-5 .review {
+    color: var(--Black);
+}
+
+
+.card-4 {
+    background-color: var(--Dark-blue);
+    margin-top: 0;
+}
+
+
+@media (min-width: 80em) {
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 1.5rem;
+        align-items: center;
+    } 
+    
+
+    
 }
